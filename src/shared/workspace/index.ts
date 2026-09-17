@@ -1,0 +1,71 @@
+export type {
+  ArchiveManagedFileResult,
+  FileWindowV2InitialPayload,
+  FileWindowV2FileUpdatePayload,
+  FileWindowV2State,
+  FileUpdateStatus,
+  LauncherPendingUpdatesPayload,
+  FileStylesConfig,
+  LauncherViewState,
+  ManagedFileState,
+  ManagedFileStatus,
+  MarkerStat,
+  MarkerStyle,
+  ModuleViewState,
+  ModuleUpdateSummary,
+  ModuleWindowData,
+  ModuleOrderEntry,
+  OpenFileWindowV2Result,
+  PendingFileUpdate,
+  PendingModuleUpdate,
+  RenderedHeadingNode,
+  StylesConfig,
+  WindowBounds,
+  WorkspaceConfig,
+  WorkspaceBrowseEntry,
+  WorkspaceDiagnosticUpdate,
+  WorkspaceUiState,
+  WorkspaceState,
+  EventMutationRequest,
+} from './workspace-types';
+export { filterHeadingsByMarker } from './filter-headings';
+export { groupManagedFiles, type ManagedFileGroup } from './file-groups';
+export { formatActivityDateTime, formatRelativeActivityTime } from './activity-time';
+export {
+  getInitialFileWindowV2ModuleKey,
+  resolveFileWindowV2ActiveModuleKey,
+  resolvePersistedFileWindowV2ActiveModuleKey,
+  selectFileWindowV2Module,
+  type FileWindowV2ModuleRef,
+} from './file-window-v2';
+export {
+  clearAllPending,
+  clearFileAttention,
+  clearModuleAttention,
+  clearPendingFile,
+  clearPendingHeading,
+  clearPendingModule,
+  deriveChangedHeadingKeys,
+  deriveUpdatedFilePaths,
+  deriveUpdatedModuleKeys,
+  getFileWindowV2UpdatePayload,
+  hasModuleBodyUpdate,
+  hasPendingFileUpdates,
+  hasPendingModuleUpdates,
+  mergePendingFileUpdates,
+  moduleBodyUpdateKey,
+  pruneEmptyPendingContainers,
+  prunePendingFileUpdatesForPayload,
+  type PendingFileUpdateIndex,
+} from './pending-file-updates';
+export { deriveUpdatedFolderPaths, normalizeUpdatePath } from './launcher-update-propagation';
+export {
+  headingNodeContentEqual,
+  headingsContentEqual,
+  markerColorsEqual,
+  markersEqual,
+  markerStatsEqual,
+  mergeHeadings,
+  modulesContentEqual,
+} from './payload-comparison';
+export { ensureWindowBoundsVisible, type WindowWorkArea } from './window-bounds';

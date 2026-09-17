@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <defs>
+    <linearGradient id="workboard-logo-main" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08AFA5"/>
+      <stop offset="1" stop-color="#008F8B"/>
+    </linearGradient>
+    <linearGradient id="workboard-logo-fold" x1="13" y1="16" x2="20" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A2EEE4" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#64D7CD" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#workboard-logo-main)" d="M5 2.5h14a2.5 2.5 0 0 1 2.5 2.5v10.2L14.2 22H5A2.5 2.5 0 0 1 2.5 19.5V5A2.5 2.5 0 0 1 5 2.5Z"/>
+  <path fill="url(#workboard-logo-fold)" d="M14.3 22v-4.2a2.5 2.5 0 0 1 2.5-2.5H21.5L14.3 22Z"/>
+</svg>
